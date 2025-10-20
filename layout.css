@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  padding: 16px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .grid_2-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*************** .max-width ******************/
+.billede {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(70%) blur(5px);
+  z-index: 0;
+}
+
+.kort {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  color: #000;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+.billede {
+  width: 500px;
+  height: 300px;
+  background-image: url("../Figma billeder/ChatGPT Image 26. sep. 2025, 14.47.46.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.kort {
+  position: relative;
+  z-index: 1;
+  color: #000;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 20px;
+}
+.kort h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.kort h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.kort p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
